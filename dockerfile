@@ -3,7 +3,7 @@ RUN pip install poetry
 # copy all files in current dir to destination
 COPY . /src
 # cd to desired dir
-WORKDIR /src
+WORKDIR /src/docker
 # install dependencies
 RUN poetry install
 # expose port through which streamlit will run
